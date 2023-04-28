@@ -4,8 +4,7 @@ import seaborn as sns
 import streamlit as st
 
 import numpy as np
-from decimal import Decimal
-from PIL import Image
+# from PIL import Image
 
 import matplotlib.pyplot as plt
 
@@ -22,9 +21,9 @@ st.set_page_config(
 # Sampling Reference
 st.title("Stats Magic Demo ✨")
 
-st.header("Sampling Process")
-sampling_process = Image.open('sampling_reference.png')
-st.image(sampling_process, caption = "Sampling Process")
+#st.header("Sampling Process")
+#sampling_process = Image.open('sampling_reference.png')
+#st.image(sampling_process, caption = "Sampling Process")
 
 
 
