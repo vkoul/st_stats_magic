@@ -1,1 +1,1 @@
-[Stats Magic](https://statsmagic.streamlit.app/)
+# 📦[Stats Magic](https://statsmagic.streamlit.app/)
