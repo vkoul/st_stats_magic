@@ -1,1 +1,1 @@
-# st_stats_magic
+[Stats Magic](https://statsmagic.streamlit.app/)
