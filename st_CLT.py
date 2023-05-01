@@ -4,7 +4,7 @@ import seaborn as sns
 import streamlit as st
 
 import numpy as np
-# from PIL import Image
+# from PIL import Im
 
 import matplotlib.pyplot as plt
 
@@ -170,12 +170,12 @@ def titanic_sample_chart():
 titanic_col1, titanic_col2 = st.columns(2)
 
 with titanic_col1:
-    st.title('Age Population Distribution')
+    st.title('Fare Population Distribution')
     titanic_popn_chart()
 
 with titanic_col2:
     # Final text 
-    st.title('Age Sampling Distribution')
+    st.title('Fare Sampling Distribution')
     titanic_sample_chart()
 
     ## Error 
