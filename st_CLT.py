@@ -111,7 +111,7 @@ with col2:
     # st.write(f'We have taken a {air_sample_count} sample each with a sample size of {air_sample_size}')
     air_sample_chart()
 
-    ## Error 
+    ## difference message
     pop_sample_diff_abs = (air_mean - sampling_mean)
     pop_sample_diff_perc = (np.array(air_mean) - np.array(sampling_mean)) / np.array(air_mean)
     st.write(f'The difference from Population mean and Sample mean is {pop_sample_diff_abs: .1f} which is {pop_sample_diff_perc:.2%}')
@@ -182,10 +182,10 @@ with titanic_col2:
     st.title('Fare Sampling Distribution')
     titanic_sample_chart()
 
-    ## Error 
-    # titanic_pop_sample_diff_abs = (titanic_pop_mean - titanic_sampling_mean)
-    # titanic_pop_sample_diff_perc = (titanic_pop_mean - titanic_sampling_mean)/titanic_pop_mean
+    ## Difference calculation
+    titanic_pop_sample_diff_abs = (titanic_pop_mean - titanic_sampling_mean)
+    titanic_pop_sample_diff_perc = (titanic_pop_mean - titanic_sampling_mean)/titanic_pop_mean
 
-    # st.write(f"The difference from Fare's Population mean and Sample mean is {titanic_pop_sample_diff_abs: .1f} which is {titanic_pop_sample_diff_perc:.2%}")
+    st.write(f"The difference from Fare's Population mean and Sample mean is {titanic_pop_sample_diff_abs: .1f} which is {titanic_pop_sample_diff_perc:.2%}")
 
     
