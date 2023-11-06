@@ -58,7 +58,7 @@ def air_popn_chart():
   
 
 # Selecting the sample
-st.subheader(" Select the sample details")
+st.subheader(" Select the flight sample details")
 air_sample_count = st.slider(label = "How many people collect samples?", min_value = 1, max_value = 500, step = 10,value = 50, key = 1)
 air_sample_size = st.slider(label = "How much sample they can collect?", min_value = 1, max_value = 10000, step = 10,value = 500, key = 2)
 
@@ -116,7 +116,7 @@ with col2:
 
 ############# TITANIC DATA ###########################################
 
-st.write( ":heavy_minus_sign:" * 95)
+# st.write( ":heavy_minus_sign:" * 95)
 
 st.header("Fare data in Titanic 🚢")
 
