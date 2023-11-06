@@ -74,7 +74,7 @@ def air_sample_chart():
 
     fig, ax = plt.subplots()
 
-    ax = sns.histplot(air_sample_mean_list, kde = True, label = "histogram of sample means", hue = ['brown']);
+    ax = sns.histplot(air_sample_mean_list, kde = True, label = "histogram of sample means", hue = 'brown')
     ax.axvline(x = sampling_mean, color = "red", label = "sampling mean")
     ax.set_title(f"The sampling mean is {sampling_mean} miles ")
     ax.legend();
