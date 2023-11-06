@@ -125,6 +125,7 @@ st.header("Fare data in Titanic 🚢")
 
 ## TITANIC Population details
 titanic_pop_mean = round(titanic.Fare.mean(),2)
+titanic_rows = titanic.shape[0]
 
 # print("The mean fare is {} dollars".format(titanic_pop_mean))
 
@@ -145,7 +146,7 @@ def titanic_popn_chart():
 # Selecting the sample
 st.subheader(" Select the sample details")
 age_sample_count = st.slider(label = "How many people collect samples?", min_value = 1, max_value = 500, step = 10,value = 50, key = 3)
-age_sample_size = st.slider(label = "How much sample they can collect?", min_value = 1, max_value = 10000, step = 10,value = 500, key = 4)
+age_sample_size = st.slider(label = "How much sample they can collect?", min_value = 1, max_value = titanic_rows, step = 10,value = 500, key = 4)
 
 # define the values
 titanic_sample_mean_list = [round(titanic.Fare.sample(age_sample_size, replace=True).mean(),3) for x in range(1, age_sample_count+1)]
