@@ -34,6 +34,9 @@ air = pd.read_csv("https://raw.githubusercontent.com/vkoul/data/main/misc/air_mi
 # Air Section
 st.header(" Flight Data 🛫")
 
+# air counts
+air_rows = air.shape[0]
+
 ## Header
 # Plot the Population chart 
 air_mean = round(air.air_passenger_miles.mean(),2)
@@ -60,7 +63,7 @@ def air_popn_chart():
 # Selecting the sample
 st.subheader(" Select the flight sample details")
 air_sample_count = st.slider(label = "How many people collect samples?", min_value = 1, max_value = 500, step = 10,value = 50, key = 1)
-air_sample_size = st.slider(label = "How much sample they can collect?", min_value = 1, max_value = 10000, step = 10,value = 500, key = 2)
+air_sample_size = st.slider(label = "How much sample they can collect?", min_value = 1, max_value = air_rows, step = 10,value = 500, key = 2)
 
 # Final text 
 st.write(f'We have taken a {air_sample_count} sample each with a sample size of {air_sample_size}')
