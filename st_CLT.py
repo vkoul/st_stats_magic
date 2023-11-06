@@ -112,9 +112,9 @@ with col2:
     air_sample_chart()
 
     ## Error 
-    # pop_sample_diff_abs = (air_mean - sampling_mean)
-    # pop_sample_diff_perc = (np.array(air_mean) - np.array(sampling_mean)) / np.array(air_mean)
-    # st.write(f'The difference from Population mean and Sample mean is {pop_sample_diff_abs: .1f} which is {pop_sample_diff_perc:.2%}')
+    pop_sample_diff_abs = (air_mean - sampling_mean)
+    pop_sample_diff_perc = (np.array(air_mean) - np.array(sampling_mean)) / np.array(air_mean)
+    st.write(f'The difference from Population mean and Sample mean is {pop_sample_diff_abs: .1f} which is {pop_sample_diff_perc:.2%}')
 
 
 ############# TITANIC DATA ###########################################
