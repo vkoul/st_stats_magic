@@ -28,7 +28,7 @@ with st.expander("About this app"):
     st.markdown(
         """
 
-    In this app. We will focus on two scenarios, one where the population is normally distributed and in another case, where the population data is right skew.
+    In this app we will focus on two scenarios, one where the population is normally distributed and in another case, where the population data is right skew.
     In both the case, we will randomly sample data from the population and try to estimate the population mean. 
     
     """
