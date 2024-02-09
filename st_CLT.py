@@ -21,6 +21,19 @@ st.set_page_config(
 # Sampling Reference
 st.title("Stats Magic Demo ✨")
 
+with st.expander("About this app"):
+
+    st.write("")
+
+    st.markdown(
+        """
+
+    In this app. We will focus on two scenarios, one where the population is normally distributed and in another case, where the population data is right skew.
+    In both the case, we will randomly sample data from the population and try to estimate the population mean. 
+    
+    """
+    )
+
 #st.header("Sampling Process")
 #sampling_process = Image.open('sampling_reference.png')
 #st.image(sampling_process, caption = "Sampling Process")
