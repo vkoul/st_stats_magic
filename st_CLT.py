@@ -62,8 +62,8 @@ def air_popn_chart():
 
 # Selecting the sample
 st.subheader(" Select the flight sample details")
-air_sample_count = st.slider(label = "How many people collect samples?", min_value = 1, max_value = 500, step = 10,value = 50, key = 1)
-air_sample_size = st.slider(label = "How much sample they can collect?", min_value = 1, max_value = air_rows, step = 10,value = 500, key = 2)
+air_sample_count = st.slider(label = "How many people are collecting samples?", min_value = 1, max_value = 500, step = 10,value = 1, key = 1)
+air_sample_size = st.slider(label = "How much sample each of them can collect?", min_value = 1, max_value = air_rows, step = 10,value = 1, key = 2)
 
 # Final text 
 st.write(f'We have taken a {air_sample_count} sample each with a sample size of {air_sample_size}')
@@ -145,8 +145,8 @@ def titanic_popn_chart():
 
 # Selecting the sample
 st.subheader(" Select the sample details")
-age_sample_count = st.slider(label = "How many people collect samples?", min_value = 1, max_value = 500, step = 10,value = 50, key = 3)
-age_sample_size = st.slider(label = "How much sample they can collect?", min_value = 1, max_value = titanic_rows, step = 10,value = 500, key = 4)
+age_sample_count = st.slider(label = "How many people are collecting samples?", min_value = 1, max_value = 500, step = 10,value = 1, key = 3)
+age_sample_size = st.slider(label =  "How much sample each of them can collect?", min_value = 1, max_value = titanic_rows, step = 10,value = 1, key = 4)
 
 # define the values
 titanic_sample_mean_list = [round(titanic.Fare.sample(age_sample_size, replace=True).mean(),3) for x in range(1, age_sample_count+1)]
